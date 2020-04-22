@@ -1,0 +1,34 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  color: #777; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  background-color: #eee; }
+  .row:not(:last-child) {
+    margin-bottom: 3rem; }
+  .row:after {
+    content: "";
+    clear: both;
+    display: table; }
+  .row [class^="col-"] {
+    background-color: #ff0000;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 4rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 4rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 4rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 4rem) / 3) + 4rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 4rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * 4rem) / 4) + 4rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }
